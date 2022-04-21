@@ -24,8 +24,9 @@ public class ReportGenerator {
             PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream("TestPdf.pdf"));
 
             SeparateLetterInput sli = new SeparateLetterInput.SLBuilder()
-                    .creditorName("TestName")
-                    
+                    .creditorName("ADIDAS")
+                    .creditorAddress("0222 Aarhus")
+                    .accountServiceRef("Our ref.: Account service ref./ 12345678987")
                     .build();
 
 
